@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Script-Controlled ACL Manager</title>
+
+  <!-- CSS STYLES -->
+  <style>
+    :root {
+      --bg-color: #0d1117;
+      --card-bg: #161b22;
+      --border-color: #30363d;
+      --text-main: #c9d1d9;
+      --text-muted: #8b949e;
+      --accent-green: #238636;
+      --accent-red: #da3633;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      margin: 0;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      margin: 0 0 0.5rem 0;
+    }
+
+    p {
+      color: var(--text-muted);
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    select, button {
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+      background-color: #21262d;
+      color: var(--text-main);
+      font-size: 0.9rem;
+      outline: none;
+    }
+
+    button {
+      background-color: var(--accent-green);
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    th, td {
+      padding: 0.75rem;
+      border-bottom: 1px solid var(--border-color);
+      font-size: 0.9rem;
+    }
+
+    th {
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .badge-allowed {
+      background-color: rgba(35, 134, 54, 0.2);
+      color: #3fb950;
+      border: 1px solid rgba(63, 185, 80, 0.4);
+    }
+
+    .badge-denied {
+      background-color: rgba(218, 54, 51, 0.2);
+      color: #f85149;
+      border: 1px solid rgba(248, 81, 73, 0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HTML STRUCTURE -->
+  <div class="container">
+    <header>
+      <h1>Script-Controlled ACL Controller</h1>
+      <p>Evaluate access privileges based on dynamic script rules.</p>
+    </header>
+
+    <div class="card">
+      <div class="form-group">
+        <select id="role-select">
+          <option value="admin">Role: Admin</option>
+          <option value="developer">Role: Developer</option>
+          <option value="guest">Role: Guest</option>
+        </select>
+
+        <select id="action-select">
+          <option value="read">Action: Read</option>
+          <option value="write">Action: Write</option>
+          <option value="execute">Action: Execute</option>
+          <option value="delete">Action: Delete</option>
+        </select>
+
+        <button id="eval-btn">Evaluate Rule</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 style="margin-top: 0;">Access Evaluation Log</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Role</th>
+            <th>Action</th>
+            <th>Status</th>
+            <th>Reason</th>
+          </tr>
+        </thead>
+        <tbody id="log-body">
+          <!-- Evaluated results will appear here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const evalBtn = document.getElementById("eval-btn");
+      const roleSelect = document.getElementById("role-select");
+      const actionSelect = document.getElementById("action-select");
+      const logBody = document.getElementById("log-body");
+
+      evalBtn.addEventListener("click", () => {
+        const role = roleSelect.value;
+        const action = actionSelect.value;
+
+        let allowed = false;
+        let reason = "";
+
+        // ACL Evaluation Rules
+        if (role === "admin") {
+          allowed = true;
+          reason = "Admin has full unrestricted permissions.";
+        } else if (role === "developer") {
+          if (action === "delete") {
+            allowed = false;
+            reason = "Developers are restricted from deleting assets.";
+          } else {
+            allowed = true;
+            reason = "Action permitted for developer role.";
+          }
+        } else if (role === "guest") {
+          if (action === "read") {
+            allowed = true;
+            reason = "Guest read-only access granted.";
+          } else {
+            allowed = false;
+            reason = "Guests are limited to read operations only.";
+          }
+        }
+
+        // Add Log Entry
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td style="text-transform: capitalize;">${role}</td>
+          <td style="text-transform: capitalize;">${action}</td>
+          <td>
+            <span class="badge ${allowed ? 'badge-allowed' : 'badge-denied'}">
+              ${allowed ? 'ALLOWED' : 'DENIED'}
+            </span>
+          </td>
+          <td>${reason}</td>
+        `;
+
+        logBody.prepend(row);
+      });
+    });
+  </script>
+</body>
+</html>
