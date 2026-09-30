@@ -1,0 +1,30 @@
+Project Executable Files
+1. Project Platform
+
+The project is developed and executed on the ServiceNow platform.
+
+2. Project Components
+
+The project contains:
+
+User configuration
+Role configuration
+Custom table
+Table fields
+READ ACL
+CREATE ACL
+WRITE ACL
+DELETE ACL
+3. Project Execution
+
+The project is executed by logging into ServiceNow and accessing the configured Institution Details table.
+
+4. Execution Process
+Login to ServiceNow.
+Verify the user role.
+Access the Institution Details table.
+Perform the permitted operation.
+Verify the ACL response.
+5. Execution Result
+
+The system provides or denies access according to the configured ACL rules.
