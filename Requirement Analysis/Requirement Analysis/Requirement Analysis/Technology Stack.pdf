@@ -1,0 +1,34 @@
+Technology Stack
+1. ServiceNow
+
+ServiceNow is the primary platform used to develop and configure the project.
+
+2. Access Control Lists
+
+ACLs are used to control access to records and operations such as READ, CREATE, WRITE, and DELETE.
+
+3. JavaScript
+
+JavaScript is used for implementing script-based access-control logic within ServiceNow.
+
+4. ServiceNow Roles
+
+Roles are assigned to users to determine the operations they are authorized to perform.
+
+5. Custom Table
+
+The project uses the custom table:
+
+u_institution_details
+
+The table stores institution-related information required for testing and demonstrating access control.
+
+6. Branch Field
+
+The Branch field contains branch values such as:
+
+ECE
+EEE
+CSE
+
+The Branch field is used as part of the record-level access restriction.
