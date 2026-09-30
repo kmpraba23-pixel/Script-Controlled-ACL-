@@ -1,0 +1,28 @@
+Solution Architecture
+1. User Layer
+
+Users interact with the ServiceNow application and request access to institution records.
+
+2. Role Layer
+
+The user's assigned roles determine the operations that the user is permitted to perform.
+
+3. Application Layer
+
+ServiceNow processes the user's request and applies the configured access-control rules.
+
+4. Security Layer
+
+ACLs evaluate the user's permissions and applicable conditions.
+
+5. Data Layer
+
+Institution records are stored in the u_institution_details table.
+
+6. Access Decision
+
+The system grants or denies access based on the configured ACL rules.
+
+7. Architecture Flow
+
+User → ServiceNow Application → Role Verification → ACL Evaluation → Branch Validation → Access Granted / Access Denied
