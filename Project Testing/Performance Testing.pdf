@@ -1,0 +1,32 @@
+Performance Testing
+1. Testing Objective
+
+The objective of testing is to verify that the ACL configuration correctly enforces the required access permissions.
+
+2. READ Testing
+
+Verify that authorized users can view permitted records and unauthorized access is restricted.
+
+3. CREATE Testing
+
+Verify that only users with the required CREATE permission can create records.
+
+4. WRITE Testing
+
+Verify that only authorized users can modify existing records.
+
+5. DELETE Testing
+
+Verify that only authorized users can delete records.
+
+6. Unauthorized Access Testing
+
+Attempt access using users without the required permissions and verify that access is denied.
+
+7. Administrator Testing
+
+Verify that administrators can access and manage all required records.
+
+8. Testing Result
+
+The testing process verifies that the configured ACL rules enforce the intended access restrictions for the Institution Details table.
