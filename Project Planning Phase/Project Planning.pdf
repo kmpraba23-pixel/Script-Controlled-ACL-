@@ -1,0 +1,40 @@
+Project Planning
+1. Project Objective
+
+To develop a secure Script-Controlled ACL system in ServiceNow that restricts record access based on field values and user roles.
+
+2. Project Team
+
+Team Leader: M. Petchiammal
+
+Team Members:
+
+Muthu Tharaniya
+Muthu Mari
+Janany
+3. Task Allocation
+Muthu Tharaniya
+Users Creation
+Roles Creation
+WRITE ACL
+Muthu Mari
+Table Creation
+DELETE ACL
+Janany
+READ ACL / ACL Configuration
+M. Petchiammal
+CREATE ACL
+Project Outcome
+Team Coordination
+4. Development Sequence
+Users Creation
+Roles Creation
+Table Creation
+READ ACL
+CREATE ACL
+WRITE ACL
+DELETE ACL
+Testing and Project Outcome
+5. Expected Outcome
+
+A functional ServiceNow ACL system that provides controlled access to institution records.
