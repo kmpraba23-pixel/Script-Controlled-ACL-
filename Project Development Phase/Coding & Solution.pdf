@@ -1,0 +1,43 @@
+Coding & Solution
+1. User Creation
+
+An authorized test user is created in ServiceNow for validating the access-control implementation.
+
+2. Role Creation
+
+Roles are configured for controlling different operations.
+
+3. Table Creation
+
+The custom table u_institution_details is created to store institution information.
+
+4. Table Fields
+
+The table contains fields including:
+
+Student Roll Number
+Student Name
+Faculty Name
+Branch
+Email
+Phone Number
+Description
+5. READ Access
+
+READ access is configured to control which records an authorized user can view.
+
+6. CREATE Access
+
+CREATE access is configured to control who can create new records.
+
+7. WRITE Access
+
+WRITE access is configured to control who can modify existing records.
+
+8. DELETE Access
+
+DELETE access is configured to control who can delete records.
+
+9. Administrator Access
+
+Administrators retain full access to the system and records.
