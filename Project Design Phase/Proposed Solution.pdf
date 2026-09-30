@@ -1,0 +1,32 @@
+Proposed Solution
+1. Solution Overview
+
+The proposed solution is a Script-Controlled ACL system implemented in ServiceNow to restrict access to institution records based on field values and user roles.
+
+2. User Management
+
+Authorized users are created and assigned the required roles.
+
+3. Role Management
+
+Different roles are used to control access for specific operations.
+
+4. Record Management
+
+Institution information is maintained in the u_institution_details table.
+
+5. Access Management
+
+ACLs are configured to control READ, CREATE, WRITE, and DELETE operations.
+
+6. Branch-Based Restriction
+
+The Branch field is used to determine whether the user can access the applicable record.
+
+7. Administrator Access
+
+Administrators retain full access to manage records and security configurations.
+
+8. Expected Result
+
+Unauthorized access is prevented while authorized users can perform their permitted operations.
