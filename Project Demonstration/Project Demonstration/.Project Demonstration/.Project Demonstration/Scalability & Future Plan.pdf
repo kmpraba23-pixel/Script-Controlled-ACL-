@@ -1,0 +1,28 @@
+Scalability & Future Plan
+1. Additional Branches
+
+The system can be extended to support additional branches and branch-specific access requirements.
+
+2. Additional Roles
+
+Additional roles can be introduced for different departments and responsibilities.
+
+3. Additional Tables
+
+The access-control approach can be applied to other ServiceNow tables.
+
+4. Advanced Conditions
+
+More advanced field-based conditions can be introduced for complex access requirements.
+
+5. Automated Testing
+
+Automated testing can be introduced to validate ACL behavior more efficiently.
+
+6. Future Integration
+
+The solution can be integrated with other ServiceNow applications and enterprise workflows.
+
+7. Long-Term Scope
+
+The project can be expanded into a broader access-management framework for securing multiple types of institutional information.
