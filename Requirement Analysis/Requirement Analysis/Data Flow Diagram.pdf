@@ -1,0 +1,34 @@
+Data Flow Diagram
+1. User
+
+The user logs into ServiceNow and requests access to institution records.
+
+2. ServiceNow Login
+
+The system authenticates the user and identifies the user's assigned roles.
+
+3. Role Verification
+
+ServiceNow verifies whether the user has the required role for the requested operation.
+
+4. Institution Details Table
+
+The requested information is stored in the u_institution_details table.
+
+5. ACL Evaluation
+
+The system evaluates the applicable Access Control List rules.
+
+6. Branch Condition
+
+For applicable record access, the Branch field is evaluated according to the configured security rules.
+
+7. Access Decision
+
+The system provides either:
+
+Access Granted
+Access Denied
+8. Data Flow
+
+User → ServiceNow → Role Verification → ACL Evaluation → Branch Condition → Access Decision → Record Access
