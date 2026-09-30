@@ -1,0 +1,50 @@
+Solution Requirements
+1. Functional Requirements
+User Management
+
+The system should allow creation and management of authorized users.
+
+Role Management
+
+The system should assign appropriate roles to users.
+
+Table Management
+
+The system should provide an Institution Details table for storing project records.
+
+Access Control
+
+The system should control access using ServiceNow ACLs.
+
+Branch-Based Restriction
+
+The system should restrict applicable records according to the Branch field.
+
+CRUD Operations
+
+The system should provide separate access control for:
+
+READ
+CREATE
+WRITE
+DELETE
+Administrator Access
+
+Administrators should retain complete access to the records and security configuration.
+
+2. Non-Functional Requirements
+Security
+
+The system should prevent unauthorized access.
+
+Reliability
+
+ACL rules should consistently enforce the configured permissions.
+
+Maintainability
+
+The access-control configuration should be easy to understand and maintain.
+
+Usability
+
+Authorized users should be able to perform their permitted operations without unnecessary complexity.
