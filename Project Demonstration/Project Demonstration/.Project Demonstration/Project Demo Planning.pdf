@@ -1,0 +1,33 @@
+Project Demo Planning
+1. Introduction
+
+Introduce the project title, team members, and project objective.
+
+2. Problem Statement
+
+Explain the need for secure and controlled access to institution records.
+
+3. Proposed Solution
+
+Explain the Script-Controlled ACL approach.
+
+4. Implementation Demonstration
+
+Demonstrate:
+
+User creation
+Role creation
+Table creation
+ACL configuration
+Record access
+5. Testing Demonstration
+
+Demonstrate READ, CREATE, WRITE, DELETE, unauthorized access, and administrator access.
+
+6. Project Result
+
+Show the final access-control behavior of the system.
+
+7. Conclusion
+
+Summarize how the project addresses the identified security requirement.
