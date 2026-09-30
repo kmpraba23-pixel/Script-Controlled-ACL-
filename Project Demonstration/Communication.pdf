@@ -1,0 +1,24 @@
+Communication
+1. Project Introduction
+
+The team introduces the project Script-Controlled ACL – Restrict Record Access Based on Field Value and explains its purpose.
+
+2. Problem Explanation
+
+The team explains the security problem related to unauthorized access to institution records.
+
+3. Solution Explanation
+
+The team explains how ServiceNow ACLs and field-based restrictions are used to control access.
+
+4. Technical Explanation
+
+The team explains the user roles, custom table, Branch field, and CRUD ACL configurations.
+
+5. Team Communication
+
+Each team member explains their assigned contribution during the project demonstration.
+
+6. Conclusion
+
+The team summarizes the implemented access-control solution and its expected benefits.
