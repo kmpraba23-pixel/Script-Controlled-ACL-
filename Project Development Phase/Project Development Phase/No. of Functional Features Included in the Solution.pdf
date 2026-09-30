@@ -1,0 +1,48 @@
+No. of Functional Features Included in the Solution
+1. User Management
+
+Creation and management of authorized users.
+
+2. Role Management
+
+Assignment of roles for controlling permissions.
+
+3. Table Management
+
+Creation of the Institution Details table.
+
+4. Field Management
+
+Configuration of required table fields.
+
+5. Record Management
+
+Creation and management of institution records.
+
+6. READ Access Control
+
+Controls record viewing permissions.
+
+7. CREATE Access Control
+
+Controls record creation permissions.
+
+8. WRITE Access Control
+
+Controls record modification permissions.
+
+9. DELETE Access Control
+
+Controls record deletion permissions.
+
+10. Branch-Based Restriction
+
+Controls access according to the Branch field.
+
+11. Administrator Access
+
+Provides complete access to administrators.
+
+12. Access Testing
+
+Validates the configured permissions and restrictions.
