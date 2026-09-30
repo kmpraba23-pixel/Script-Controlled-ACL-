@@ -1,0 +1,44 @@
+Content
+Brainstorming & Idea Prioritization
+1. Project Background
+
+The project focuses on improving record security in ServiceNow by controlling access to institution records based on user roles and the value of the Branch field.
+
+2. Problems Identified
+Unauthorized users may access institution records.
+Users may access records belonging to branches they are not authorized to view.
+Different users require different permissions for different operations.
+Administrators require complete access to manage the system.
+Standard access control may not provide sufficient field-based record restrictions.
+3. Ideas Considered
+
+The following ideas were considered during brainstorming:
+
+Role-based access control.
+Branch-based record restriction.
+Script-controlled Access Control Lists.
+Separate ACLs for READ, CREATE, WRITE, and DELETE operations.
+Administrator access for complete system management.
+4. Selected Project Idea
+
+The selected idea is:
+
+Script-Controlled ACL – Restrict Record Access Based on Field Value
+
+The solution uses ServiceNow ACLs and scripts to control access to institution records according to user roles and the Branch field.
+
+5. Reason for Selection
+
+The idea was selected because it provides:
+
+Better control over record access.
+Branch-based security.
+Separate permissions for different operations.
+Improved protection of institution information.
+Full access for administrators.
+6. Expected Benefits
+Prevent unauthorized record access.
+Protect institution information.
+Control READ, CREATE, WRITE, and DELETE operations.
+Improve data security.
+Provide a structured and maintainable access-control mechanism
