@@ -1,0 +1,30 @@
+Content
+Empathy Map
+1. User Says
+"I should only access the records I am authorized to view."
+"I need appropriate permissions for my work."
+"Unauthorized users should not access my branch records."
+"The administrator should be able to manage all records."
+2. User Thinks
+Is my information protected?
+Who can access these records?
+Can another user modify my records?
+Are permissions correctly configured?
+Can the administrator manage access when required?
+3. User Does
+Logs into ServiceNow.
+Accesses institution records.
+Performs permitted operations.
+Creates or updates records when authorized.
+Reports or avoids unauthorized access.
+4. User Feels
+Secure when access is properly controlled.
+Concerned when unauthorized access is possible.
+Confident when permissions are clearly defined.
+Satisfied when the system provides reliable access control.
+5. User Needs
+Secure record access.
+Clearly defined permissions.
+Branch-based restrictions.
+Reliable ACL enforcement.
+Administrator support.
