@@ -1,0 +1,33 @@
+Brainstorming & Idea Prioritization
+1. Project Idea
+
+Develop a Script-Controlled ACL system in ServiceNow to restrict access to institution records based on the Branch field. The system ensures that only authorized users can access the required records while administrators retain complete access.
+
+2. Problems Identified
+Unauthorized users may access sensitive records.
+Basic role-based access may not be sufficient for field-based restrictions.
+Different users may require different permissions for READ, CREATE, WRITE, and DELETE operations.
+Administrators need complete access for management and monitoring.
+3. Ideas Considered
+Role-based access control.
+Field-based access restriction.
+Script-controlled ACL.
+Separate ACLs for READ, CREATE, WRITE, and DELETE operations.
+4. Selected Idea
+
+Script-Controlled ACL – Restrict Record Access Based on Field Value
+
+The selected solution uses ServiceNow Access Control Lists and scripts to control access based on user roles and the value of the Branch field.
+
+5. Reason for Selection
+Provides controlled access to records.
+Improves data security.
+Supports different permissions for different operations.
+Allows branch-based record restriction.
+Administrators can retain full access.
+6. Expected Benefits
+Improved record security.
+Prevention of unauthorized access.
+Controlled CRUD operations.
+Better management of user permissions.
+Easy maintenance and future expansion
