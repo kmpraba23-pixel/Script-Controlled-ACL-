@@ -1,0 +1,34 @@
+Sample Project Documentation
+1. Project Title
+
+Script-Controlled ACL – Restrict Record Access Based on Field Value
+
+2. Project Objective
+
+To provide secure and controlled access to institution records using ServiceNow ACLs.
+
+3. Problem
+
+Unauthorized users may access or modify records that they are not permitted to use.
+
+4. Proposed Solution
+
+A Script-Controlled ACL mechanism is implemented to control record access based on user roles and the Branch field.
+
+5. Technology Used
+ServiceNow
+Access Control Lists
+JavaScript
+ServiceNow Roles
+Custom Table
+6. Implementation
+
+Users, roles, the Institution Details table, and separate ACLs are configured in ServiceNow.
+
+7. Testing
+
+READ, CREATE, WRITE, DELETE, unauthorized access, and administrator access are tested.
+
+8. Outcome
+
+The project provides controlled access to institution records and prevents unauthorized operations.
