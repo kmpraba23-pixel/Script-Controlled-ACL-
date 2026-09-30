@@ -1,0 +1,28 @@
+Customer Journey Map
+1. Login
+
+The user logs into the ServiceNow system using authorized credentials.
+
+2. Access Request
+
+The user attempts to access the Institution Details table and its records.
+
+3. Permission Verification
+
+ServiceNow checks the user's assigned roles and applicable ACL rules.
+
+4. Record Evaluation
+
+The system evaluates the Branch field of the requested record.
+
+5. Access Decision
+
+Based on the user's role and ACL configuration, access is either granted or denied.
+
+6. Operation
+
+If permission is granted, the user can perform the permitted operation such as READ, CREATE, WRITE, or DELETE.
+
+7. Completion
+
+The system completes the authorized operation and prevents unauthorized operations
