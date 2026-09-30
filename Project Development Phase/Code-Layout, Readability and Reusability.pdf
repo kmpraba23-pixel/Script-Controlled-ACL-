@@ -1,0 +1,20 @@
+Code-Layout, Readability and Reusability
+1. Development Structure
+
+The project is organized into separate components for user management, role management, table creation, and ACL configuration.
+
+2. Organized Access Control
+
+Separate ACL configurations are maintained for READ, CREATE, WRITE, and DELETE operations.
+
+3. Readability
+
+The access-control logic is structured clearly so that team members can understand and maintain the configuration.
+
+4. Reusability
+
+The ACL-based approach can be extended to other tables, branches, roles, and access requirements.
+
+5. Maintainability
+
+The project structure allows future modifications to access rules without affecting unrelated components.
