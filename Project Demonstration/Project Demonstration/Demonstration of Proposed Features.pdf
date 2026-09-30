@@ -1,0 +1,40 @@
+Demonstration of Proposed Features
+1. User Creation
+
+Demonstrate the creation of the authorized test user.
+
+2. Role Creation
+
+Demonstrate the roles assigned for access control.
+
+3. Table Creation
+
+Demonstrate the u_institution_details table.
+
+4. Record Creation
+
+Demonstrate the creation of institution records with different Branch values.
+
+5. READ Access
+
+Demonstrate the configured READ restriction.
+
+6. CREATE Access
+
+Demonstrate the CREATE permission.
+
+7. WRITE Access
+
+Demonstrate the WRITE permission.
+
+8. DELETE Access
+
+Demonstrate the DELETE permission.
+
+9. Administrator Access
+
+Demonstrate that administrators retain complete access.
+
+10. Final Output
+
+Demonstrate that authorized users can perform permitted operations while unauthorized operations are restricted.
