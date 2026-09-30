@@ -1,0 +1,25 @@
+Content
+Define Problem Statements
+1. Background
+
+Institution records in ServiceNow may contain student, faculty, contact, and academic information. Proper access control is required to ensure that users can access only the records permitted for their role and branch.
+
+2. Main Problem Statement
+
+There is a need for a secure access-control mechanism that restricts users from accessing institution records based on the Branch field while allowing authorized users and administrators to perform their required operations.
+
+3. Security Problem
+
+Without appropriate access restrictions, users may view, create, modify, or delete records that they are not authorized to access. This can result in unauthorized access to important institutional information.
+
+4. Access Control Problem
+
+Different users require different levels of permission. The system must distinguish between READ, CREATE, WRITE, and DELETE operations.
+
+5. Proposed Problem Solution
+
+The project proposes a Script-Controlled ACL mechanism in ServiceNow that uses roles and field-based conditions to control access to institution records.
+
+6. Project Goal
+
+The goal is to provide secure and controlled access to institution records while ensuring that administrators retain complete access to the system.
